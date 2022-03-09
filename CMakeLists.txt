@@ -18,10 +18,7 @@ include_directories(${ANTLR4_INCLUDE_DIRS})
 
 # set variable pointing to the antlr tool that supports C++
 # this is not required if the jar file can be found under PATH environment
-#set(ANTLR_EXECUTABLE /home/user/antlr-4.9.3-complete.jar)
-#set(ANTLR_EXECUTABLE ../bin/antlr-4.9.3-complete.jar)
 set(ANTLR_EXECUTABLE ${CMAKE_CURRENT_SOURCE_DIR}/bin/antlr-4.9.3-complete.jar)
-#set(ANTLR_EXECUTABLE /Users/bischowg/dev/cpp/vhdl/bin/antlr-4.9.3-complete.jar)
 
 # add macros to generate ANTLR Cpp code from grammar
 find_package(ANTLR REQUIRED)
